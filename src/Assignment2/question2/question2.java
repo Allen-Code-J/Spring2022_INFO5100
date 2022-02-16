@@ -1,21 +1,5 @@
 package Assignment2.question2;
 
-public class question2{
-    public static void main(String[] args) {
-        Triangle triangle1 = new Triangle(5);
-        System.out.println(triangle1.getPerimeter());
-        Triangle triangle2 = new Triangle(10,5);
-        System.out.println(triangle2.getArea());
-
-        rhombus rhombus1 = new rhombus(10);
-        System.out.println(rhombus1.getPerimeter());
-        rhombus rhombus2 = new rhombus(10,5);
-        System.out.println(rhombus2.getArea());
-
-        Shape shape1 = new Shape("square",10,100.0,40);
-        shape1.printShape();
-    }
-}
 
 class Shape {
     String name;
