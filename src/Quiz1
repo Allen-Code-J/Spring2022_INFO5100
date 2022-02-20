@@ -1,0 +1,36 @@
+package Quiz1;
+
+public class Person {
+    String name;
+    int ID;
+    int Age;
+
+    public Person() {
+    }
+
+    public Person(String name, int ID, int age) {
+        this.name = name;
+        this.ID = ID;
+        Age = age;
+    }
+}
+
+class Professor extends Person{
+    public Professor(String name, int ID, int age) {
+        super(name, ID, age);
+    }
+
+    public void giveQuiz(String quiz){
+        System.out.println("The professor: "+name+" gave a "+quiz);
+    }
+}
+
+class Student extends Person{
+    public Student(String name, int ID, int age) {
+        super(name, ID, age);
+    }
+
+    public void takeQuiz(String quiz){
+        System.out.println("The student: "+name+"would like to join in the "+quiz);
+    }
+}
