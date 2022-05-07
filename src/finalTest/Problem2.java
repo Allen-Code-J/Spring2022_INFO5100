@@ -1,19 +1,31 @@
 package src.finalTest;
 
+/**
+ * Question 2: String Compression:
+ * Implement a method to perform basic string compression using
+ * the counts of repeated characters.
+ * For example, the string aabcccccaaa would become a2b1c5a3.
+ * If the "compressed" string would not become smaller than the original string,
+ * your method should return the original string.
+ * You can assume the string has only uppercase and lowercase letters (a - z).
+ */
+
 public class Problem2 {
     public static void main(String[] args) {
         String str = "aabcccccaaa";
         String str1 = "ab";
         String str2 = " ";
+        String str3 = "aa";
         System.out.println(new SolutionTwo().compressString(str));
         System.out.println(new SolutionTwo().compressString(str1));
         System.out.println(new SolutionTwo().compressString(str2));
+        System.out.println(new SolutionTwo().compressString(str3));
     }
 }
 
 class SolutionTwo{
     public String compressString(String str){
-        if(str.length() <= 2) return str;
+        if(str.length() <= 1) return str;
         //TODO: Write your code here
         int n = 1;
         StringBuffer result = new StringBuffer();

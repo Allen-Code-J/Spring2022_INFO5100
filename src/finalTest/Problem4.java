@@ -1,5 +1,10 @@
 package src.finalTest;
 
+/**
+ * Question 4: Given an integer n,
+ * return any array containing n unique integers such that they add up to 0.
+ */
+
 public class Problem4 {
     public static void main(String[] args) {
         int n = 12;
