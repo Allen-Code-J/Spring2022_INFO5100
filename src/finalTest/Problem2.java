@@ -14,8 +14,8 @@ public class Problem2 {
     public static void main(String[] args) {
         String str = "aabcccccaaa";
         String str1 = "ab";
-        String str2 = " ";
-        String str3 = "aa";
+        String str2 = "aabbbcccddd";
+        String str3 = "a";
         System.out.println(new SolutionTwo().compressString(str));
         System.out.println(new SolutionTwo().compressString(str1));
         System.out.println(new SolutionTwo().compressString(str2));
